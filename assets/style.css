@@ -1,0 +1,293 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+}
+
+
+/*  HEADER */
+
+.menu{
+
+	width: 100%;
+	height: 130px;
+	background: #8A49AB;
+	transition: all ease 1s;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.menu p{
+
+	display: inline-block;
+}
+
+.moradita{
+
+	font-size: 50px;
+	color: #ffe731;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+.submenu{
+
+	display: flex;
+	/*background: red;*/
+	align-items: center;
+	/*padding: 15px 10px;*/
+}
+
+.submenu a{
+
+	text-decoration: none;
+	font-style: italic;
+	font-size: 17px;
+	padding: 10px;
+	color: #fff;
+}
+
+
+.submenu a:hover{
+
+	background: #8116B8;
+}
+
+.menu-fixed{
+	
+	/*-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;*/
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	height: 80px;
+	/*max-width: 100%;*/
+	top: 0;
+	background: rgba(138, 73, 171,.8);
+	transition: all ease 1s;
+	overflow: hidden;
+	-webkit-box-shadow: 0 0 30px 0 #000;
+	box-shadow: 0 0 30px 0 #000;
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+/* MAIN */
+
+
+.main{
+
+	width: 100%;
+	/*height: 200em;*/
+	
+}
+
+.main article{
+
+	/*background: #fff;*/
+	/*border: solid 1px #000;*/
+	/*margin-bottom: 100px;*/
+	margin-bottom: 50px;
+}
+
+
+.descripcion{
+
+	font-size: 20px;
+	color: #000;
+	padding: 30px 50px;
+	border-bottom: solid 3px green;
+}
+
+.father{
+
+	/*background: green;*/
+	display: flex;
+	padding: 20px;
+	justify-content: space-around;
+}
+
+.imagenes{
+
+	background: #5A54A1;
+	display: inline-block;
+	padding: 30px;
+}
+
+.imagenes img{
+
+	border-radius: 15px;
+	box-shadow: 0 0 10px 0 #000;
+}
+
+.imagenes span{
+
+	font-size: 17px;
+	color: #fff;
+	margin-top: 40px;
+	display: block;
+	text-align: center;
+}
+
+
+.table{
+	
+	
+	display: flex;
+	justify-content: center;
+}
+
+table{
+
+	width: 500px;
+	height: 300px;
+	border: solid 3px #000;
+}
+
+
+th{
+	    background: #ccc;
+    font-size: 1.4em;
+}
+
+tr{
+	
+	    background: #f2f2f2;
+    font-size: 1.0em;
+	text-align: center;
+}
+
+
+
+#slider h2{
+	
+    text-align: center;
+    color: #fff;
+    z-index: 99;
+    padding: 20px 0;
+    background: red;
+    font-size: 2em;	
+	
+}
+
+
+#slider{
+            margin: 0 auto;
+			margin-top: 1.2em;
+			margin-bottom: 130px;
+            width: 800px;
+            height: 500px;
+            overflow:hidden;
+            background-color: black;
+        }
+   
+    /*Valores de las imagenes*/
+#slider img{
+           
+       margin: 0 auto;
+       -moz-transition: opacity 2s;
+       -webkit-transition: opacity 2s;
+        transition: opacity 2s;
+        width: 800px;
+        height: 500px;
+        position: absolute;
+         opacity: 0;
+   }
+    /*Para que la primera imagen este activa al inicio*/
+#slider img:nth-child(1){
+      
+       opacity: 1;
+  }
+
+
+
+
+/* --------------------------------------------------------------- */
+
+
+/* FOOTER   */
+
+
+.footer{
+
+	width: 100%;
+	height: 150px;
+	background: #000;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	/*padding: 0 25px;*/
+
+}
+
+
+.footer p{
+
+	font-size: 35px;
+	animation: letra 3s infinite alternate;
+	/*margin-right: 50px;*/
+}
+
+
+.footer .redes{
+
+	
+	/*padding: 20px;*/
+	/*background: blue;*/
+	
+
+}
+
+
+.footer a{
+
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	text-align: center;
+	/*margin: 0 10px;*/
+}
+
+.footer span{
+
+	display: block;
+	text-align: center;
+}
+
+.redsocial{
+
+	/*background: red;*/
+	display: inline-block;
+	padding: 1px;
+	margin: 0 15px;
+}	
+
+
+/* ----------------------------------------------------------------- */
+
+/* EFECTO FOOTER */
+
+@-webkit-keyframes letra{
+   
+   from{transform: rotateY(200deg);}
+} 
+
+
+@keyframes letra{
+	
+	from{transform: rotateY(200deg)};
+}
